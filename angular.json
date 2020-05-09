@@ -24,7 +24,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "src/styles.scss",
+              "src/app/styles/_imports.scss"
             ],
             "scripts": []
           },
@@ -89,7 +91,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "src/styles.scss",
+              "src/app/styles/_imports.scss"
             ],
             "scripts": []
           }
@@ -120,6 +124,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "professional-resume"
 }
