@@ -1,1 +1,21 @@
-<p>header works!</p>
+<div class="header-wrapper">
+  <div class="avatar">
+    <app-avatar></app-avatar>
+  </div>
+  <div class="intro">
+    <div class="title">Simona Boldur</div>
+    <div class="subtitle">Software Engineer</div>
+    <p>Software Engineer with multiple years of experience in a wide variety of Technologies and Software Development
+      using Java. </p>
+    <p>Passionate about collaborative working, devOps culture, good code practices, and system architecture.</p>
+    <div class="subheader">
+      <ul *ngIf="contactDetails.length" class="contact-details">
+        <li *ngFor="let item of contactDetails" class="contact-detail">
+          <i class="icon {{item.icon}}"></i>
+          <p *ngIf="!item.url">{{ item.text }}</p>
+          <a *ngIf="item.url" [href]="item.url">{{ item.text }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

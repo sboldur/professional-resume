@@ -1,0 +1,116 @@
+@import 'src/app/styles/base/variables';
+
+:host {
+  display: flex;
+  padding: 20px 20px 10px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-wrapper {
+  padding: 10px;
+  position: relative;
+  display: flex;
+
+  .avatar {
+    width: 30%;
+  }
+
+  .intro {
+    width: 70%;
+    .title {
+      color: $primary;
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .subtitle {
+      color: $primary-light;
+      padding: 5px;
+      font-size: 18px;
+    }
+    .contact-details {
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 20px 10px;
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+
+      .contact-detail {
+        display: flex;
+        padding: 5px 0;
+        align-items: center;
+        .icon {
+          color: $dark;
+          font-size: 20px;
+          width: 40px;
+          text-align: center;
+        }
+
+        a, p {
+          color: $primary;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.5em;
+          max-height: 3em;
+        }
+
+        a:hover {
+          color: $dark-normal;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  :host {
+    padding: 10px 10px;
+  }
+  .header-wrapper {
+    flex-direction: column;
+    margin: 0;
+    max-width: inherit;
+
+    .avatar {
+      width: inherit;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .intro {
+      width: inherit;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-details {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .contact-detail {
+        justify-content: center;
+        .icon {
+          width: inherit;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media print {
+  :host {
+    background-color: transparent;
+  }
+}
+
+

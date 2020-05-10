@@ -1,0 +1,39 @@
+@import 'src/app/styles/base/variables';
+
+$BORDER: 2;
+$IMG-WIDTH: 200;
+$IMG-WIDTH-PHONE: 180;
+
+.border {
+  border: #{$BORDER}px solid $primary;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: #{$IMG-WIDTH + $BORDER * 2}px;
+  height: #{$IMG-WIDTH + $BORDER * 2}px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: #{$IMG-WIDTH}px;
+  height: #{$IMG-WIDTH}px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .border {
+    width: #{$IMG-WIDTH-PHONE + $BORDER * 2}px;
+    height: #{$IMG-WIDTH-PHONE + $BORDER * 2}px;
+  }
+  .profile-image {
+    width: #{$IMG-WIDTH-PHONE}px;
+    height: #{$IMG-WIDTH-PHONE}px;
+  }
+}
+
+@media print {
+  :host {
+    background-color: transparent;
+  }
+}
