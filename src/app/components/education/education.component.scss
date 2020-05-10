@@ -1,0 +1,11 @@
+.education-container {
+  width: 80%;
+  margin: 20px;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .education-container {
+    width: 95%;
+    margin: 10px;
+  }
+}

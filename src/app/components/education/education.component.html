@@ -1,1 +1,9 @@
-<p>education works!</p>
+<div class="education>">
+  <div class="education-container" *ngFor="let education of educationItems">
+    <app-cardbox [title]="education.degree + ' , ' + education.domain"
+                 [subtitle]="education.university"
+                 [footerTags]="[education.date, education.location]">
+    </app-cardbox>
+  </div>
+</div>
+
