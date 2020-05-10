@@ -1,0 +1,11 @@
+<div class="cardbox">
+  <div class="cardbox-title">{{title}}</div>
+  <div class="cardbox-subtitle" *ngIf="subtitle">{{subtitle}}</div>
+  <div *ngFor="let detail of details">
+    <div class="cardbox-detail">{{detail}}</div>
+  </div>
+  <div class="cardbox-footer" *ngIf="footerTags">
+    <p *ngIf="footerTitle">{{footerTitle}}: </p>
+    <app-tag *ngFor="let tag of footerTags" [tag]="tag"></app-tag>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+@import 'src/app/styles/base/variables';
+
+.cardbox {
+  position: relative;
+  padding: 10px 30px 20px;
+  border-radius: 10px;
+  background: #ffffff;
+
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 8px 15px 0 rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 8px 15px 0 rgba(0, 0, 0, .2);
+
+  .cardbox-title {
+    font-size: 20px;
+    padding: 10px 10px 0 10px;
+  }
+
+  .cardbox-subtitle {
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+
+  .cardbox-detail {
+    margin-top: 20px;
+  }
+}
