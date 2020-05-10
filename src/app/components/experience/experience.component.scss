@@ -1,0 +1,72 @@
+@import 'src/app/styles/base/variables';
+
+.timeline {
+  position: relative;
+}
+
+.tl-container {
+  font-family: "Roboto", sans-serif;
+  width: 90%;
+  display: block;
+  position: relative;
+
+  ul.tl {
+    margin: 20px 0;
+    padding: 0;
+    display: inline-block;
+
+    li {
+      list-style: none;
+      margin: auto auto auto 150px;
+      min-height: 50px;
+      border-left: 1px dashed $baby-blue;
+      padding: 0 0 50px 30px;
+      position: relative;
+
+      .timestamp {
+        color: $grey-darken;
+        position: absolute;
+        left: -100px;
+        text-align: right;
+        font-size: 14px;
+      }
+    }
+
+    li:last-child {
+      border-left: 0;
+    }
+
+    li::before {
+      position: absolute;
+      left: -18px;
+      top: -5px;
+      content: " ";
+      border: 8px solid rgba(255, 255, 255, 0.74);
+      border-radius: 500%;
+      background: $primary;
+      height: 20px;
+      width: 20px;
+      transition: all 500ms ease-in-out;
+    }
+
+    li:hover::before {
+      border-color: $primary;
+      transition: all 1000ms ease-in-out;
+    }
+  }
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .tl-container {
+    width: 100%;
+
+    ul.tl {
+      margin: 5px 0;
+
+      li {
+        margin: auto auto auto 100px;
+        padding: 0 0 20px 30px;
+      }
+    }
+  }
+}
