@@ -1,0 +1,28 @@
+@import 'src/app/styles/base/variables';
+
+.tag {
+  background: $white;
+  border: 1px solid $grey-light;
+  border-radius: 10px;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  position: relative;
+  margin: 10px 5px 5px;;
+  padding: 0 15px;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+
+  span {
+    position: absolute;
+    top: 1px;
+    left: 97%;
+    max-width: 0;
+    height: 24px;
+    line-height: 21px;
+    padding: 0 3px 0 3px;
+    background: $primary;
+    border-radius: 0 10px 10px 0;
+    opacity: .95;
+  }
+}
