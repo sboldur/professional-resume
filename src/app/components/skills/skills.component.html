@@ -1,1 +1,5 @@
-<app-tag *ngFor="let skill of skillItems" [tag]="skill.name"></app-tag>
+<div *ngFor="let skill of skillItems">
+  <p class="category-row">{{skill.category}}: </p>
+  <app-tag *ngFor="let name of skill.skillNames" [tag]="name"></app-tag>
+</div>
+

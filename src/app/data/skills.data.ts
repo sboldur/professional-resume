@@ -2,78 +2,27 @@ import {Skill} from "../components/skills/skills.model";
 
 export const SKILL_ITEMS: Skill[] = [
   {
-    name: 'Java 8'
+    category: 'Technologies',
+    skillNames: ['Java 8', 'Maven', 'Spring', 'Spring Boot','Hibernate', 'Spark']
   },
   {
-    name: 'Spring'
+    category: 'Databases',
+    skillNames: ['MongoDB', 'Cassandra','PostgreSql']
   },
   {
-    name: 'Spring Boot'
+    category: 'Testing tools',
+    skillNames: ['JUnit', 'Mockito', 'C​ucumber']
   },
   {
-    name: 'A​WS'
+    category: 'CI/CD',
+    skillNames: ['Jenkins', 'GitlabCI', '​CircleCi']
   },
   {
-    name: 'Hibernate'
+    category: 'Other',
+    skillNames: ['A​WS','Docker', 'Kubernetes', 'Git','Kibana', 'Zookeeper', 'IntelliJIdea', 'Agile Methodologies']
   },
   {
-    name: 'Docker'
-  },
-  {
-    name: 'Kubernetes'
-  },
-  {
-    name: 'Spark'
-  },
-  {
-    name: 'MongoDB'
-  },
-  {
-    name: 'Cassandra'
-  },
-  {
-    name: 'PostgreSql'
-  },
-  {
-    name: 'JUnit'
-  },
-  {
-    name: 'Mockito'
-  },
-  {
-    name: 'C​ucumber'
-  },
-  {
-    name: 'Jenkins'
-  },
-  {
-    name: 'GitlabCI'
-  },
-  {
-    name: '​CircleCi'
-  },
-  {
-    name: 'Agile Methodologies'
-  },
-  {
-    name: 'Git'
-  },
-  {
-    name: 'Zookeeper'
-  },
-  {
-    name: 'Kibana'
-  },
-  {
-    name: 'IntelliJIdea'
-  },
-  {
-    name: 'Github'
-  },
-  {
-    name: 'Bitbucket'
-  },
-  {
-    name: 'Gitlab'
+    category: 'Hosting platforms',
+    skillNames: ['Github', 'Bitbucket', 'Gitlab']
   }
 ]
