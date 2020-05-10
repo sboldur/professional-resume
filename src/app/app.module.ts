@@ -3,28 +3,34 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './components/about/about.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { EducationComponent } from './components/education/education.component';
-import { LanguageComponent } from './components/language/language.component';
+import { LanguagesComponent } from './components/languages/languages.component';
 import { HeaderComponent } from './components/header/header.component';
-import { VerticalTimelineComponent } from './components/vertical-timeline/vertical-timeline.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AvatarComponent } from './components/common/avatar/avatar.component';
+import { HomeComponent } from './components/home/home.component';
+import { CardboxComponent } from './components/common/cardbox/cardbox.component';
+import { TagComponent } from './components/common/tag/tag.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
     ExperienceComponent,
     SkillsComponent,
     EducationComponent,
-    LanguageComponent,
+    LanguagesComponent,
     HeaderComponent,
-    VerticalTimelineComponent
+    AvatarComponent,
+    HomeComponent,
+    CardboxComponent,
+    TagComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

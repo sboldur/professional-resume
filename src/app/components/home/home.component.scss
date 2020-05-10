@@ -1,0 +1,39 @@
+@import 'src/app/styles/base/variables';
+
+.page-container {
+  margin: 40px auto;
+  max-width: 90%;
+  background-color: $white;
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .15);
+
+  .content-wrapper {
+    padding: 10px 50px 10px;
+  }
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .page-container {
+    margin: 0;
+    max-width: 100%;
+
+    .content-wrapper {
+      padding: 5px 20px 5px;
+    }
+  }
+}
+
+.break-line {
+  border-top: 1px solid $grey-normal;
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+section {
+  padding: 10px 0;
+}
