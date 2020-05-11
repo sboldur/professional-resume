@@ -4,5 +4,6 @@ export interface Experience {
   dateFrom: string;
   dateTo: string;
   workResponsibilities?: string[];
+  tags?: string[];
   description?: string [];
 }

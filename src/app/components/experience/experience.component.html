@@ -3,7 +3,8 @@
     <ul class="tl">
       <li class="tl-item" *ngFor="let item of experienceItems">
         <div class="timestamp">{{item.dateFrom}} - <br>{{item.dateTo}}</div>
-        <app-cardbox [title]="item.title" [subtitle]="item.location" [details]="item.description">
+        <app-cardbox [title]="item.title" [subtitle]="item.location"
+                     [details]="item.description" [footerTags]="item.tags">
         </app-cardbox>
       </li>
     </ul>
