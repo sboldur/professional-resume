@@ -3,11 +3,15 @@ import {Skill} from "../components/skills/skills.model";
 export const SKILL_ITEMS: Skill[] = [
   {
     category: 'Technologies',
-    skillNames: ['Java 8', 'Maven', 'Spring', 'Spring Boot','Hibernate', 'Spark']
+    skillNames: ['Java 8', 'Spring', 'Spring Boot', 'Hibernate', 'Spark']
   },
   {
     category: 'Databases',
-    skillNames: ['MongoDB', 'Cassandra','PostgreSql']
+    skillNames: ['MongoDB', 'Cassandra', 'PostgreSql']
+  },
+  {
+    category: 'Software/Tools',
+    skillNames: ['Maven', 'AWS', 'Flyway', 'Docker', 'Kubernetes', 'Kibana']
   },
   {
     category: 'Testing tools',
@@ -19,7 +23,7 @@ export const SKILL_ITEMS: Skill[] = [
   },
   {
     category: 'Other',
-    skillNames: ['A​WS','Docker', 'Kubernetes', 'Git','Kibana', 'Zookeeper', 'IntelliJIdea', 'Agile Methodologies']
+    skillNames: ['Git', 'Jira', 'Confluence', 'IntelliJIdea', 'Agile Methodologies']
   },
   {
     category: 'Hosting platforms',
